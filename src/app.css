@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.app {
+  max-width: 800px;
+  margin: 40px auto 20px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #e0dada;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(104, 99, 99, 0.445);
+}
+
+.expense-form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.expense-form label {
+  font-size: 16px;
+}
+
+.expense-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.expense-form button {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+  font-weight: bold;
+}
+
+.expense-form button:hover {
+  opacity: 0.9;
+}
+
+.expense-table {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 5px;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+}
+
+.expense-table th {
+  font-size: 16px;
+  background: #f9fafb;
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ef4444;
+  color: #fff;
+  font-weight: bold;
+} 
