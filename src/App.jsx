@@ -31,7 +31,7 @@ export default function App() {
   };
 
   // totaal berekenen
-  const total = expenses.reduce((sum, expense) => sum + expense.amount, 0);
+    const total = expenses.reduce((sum, exp) => sum + exp.amount, 0);
 
   return (
     <div className="app">

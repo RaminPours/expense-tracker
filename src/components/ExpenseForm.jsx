@@ -15,7 +15,7 @@ export default function ExpenseForm({ onAdd }) {
 
     const expense = {
       id: crypto.randomUUID(),
-      title,
+      title: title,
       amount: Number(amount),
       category: category || "Onbekend",
       date: new Date().toISOString(),
@@ -51,6 +51,7 @@ export default function ExpenseForm({ onAdd }) {
           onChange={(e) => setAmount(e.target.value)}
           step="0.01"
           min="0"
+          placeholder="Voer een bedrag..."
         />
       </div>
 

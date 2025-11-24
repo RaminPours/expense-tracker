@@ -11,7 +11,7 @@ export default function ExpenseList({ expenses, onDelete }) {
           <th>Omschrijving</th>
           <th>Categorie</th>
           <th>Bedrag (€)</th>
-          <th>delete</th>
+          <th>Verwijderen</th>
         </tr>
       </thead>
       
@@ -22,7 +22,7 @@ export default function ExpenseList({ expenses, onDelete }) {
             <td>{exp.title}</td>
             <td>{exp.category}</td>
             <td>€ {exp.amount.toFixed(2)}</td>
-            <td><button onClick={() => onDelete(exp.id)}>delete</button></td>
+            <td><button onClick={() => onDelete(exp.id)}>✖</button></td>
           </tr>
         ))}
       </tbody>
