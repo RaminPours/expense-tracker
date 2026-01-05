@@ -35,9 +35,8 @@ export default function App() {
 
   return (
     <div className="app">
-      <h1>Uitgaven beheren</h1>
-
       <section className="card">
+        <h1>Uitgaven beheren</h1>
         <h2>Nieuwe uitgave</h2>
         <ExpenseForm onAdd={handleAddExpense} />
       </section>

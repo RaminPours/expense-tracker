@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  background: #f4f4f4;
+  background: black;
 }
 
 .app {
-  max-width: 650px;
+  max-width: 500px;
   margin: 40px auto 20px auto;
   padding: 0 16px;
 }
@@ -12,6 +12,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 24px;
+  color: black;
 }
 
 .card {
@@ -19,7 +20,6 @@ h1 {
   border-radius: 8px;
   padding: 16px 20px;
   margin-bottom: 15px;
-  box-shadow: 0 2px 6px rgba(104, 99, 99, 0.445);
 }
 
 .expense-form .form-row {
@@ -34,7 +34,7 @@ h1 {
 
 .expense-form input {
   padding: 8px;
-  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
 .expense-form button {
@@ -48,10 +48,6 @@ h1 {
   font-weight: bold;
 }
 
-.expense-form button:hover {
-  opacity: 0.9;
-}
-
 .expense-table {
   width: 100%;
   margin-top: 12px;
@@ -60,7 +56,7 @@ h1 {
 .expense-table th,
 .expense-table td {
   padding: 5px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid #000000;
   text-align: center;
 }
 
@@ -78,3 +74,14 @@ button {
   color: #fff;
   font-weight: bold;
 } 
+ 
+@media (max-width: 480px) {
+  .app {
+    margin: 20px auto 10px auto;
+    padding: 0 8px;
+  }
+
+  .expense-form .form-row {
+    flex-direction: column;
+  }
+}

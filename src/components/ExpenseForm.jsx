@@ -44,7 +44,7 @@ export default function ExpenseForm({ onAdd }) {
       </div>
 
       <div className="form-row">
-        <label>Bedrag (€)</label>
+        <label>Bedrag</label>
         <input
           type="number"
           value={amount}
